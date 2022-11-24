@@ -1,2 +1,2 @@
-# Covid19 Analysis
+# Covid19 Epidemiological Analysis
 Repository with codes related to various exploratory data analysis (EDA) techniques and application of ML and DL models
