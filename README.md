@@ -16,8 +16,6 @@ This repository contains different types of formats. We present the notebook
 and xlsx files
 
 ## Credits
-To use our original or adapted codes, please cite our work https://doi.org/10.21203/rs.3.rs-2285898/v1 as [1], see reference at the end of this document.
-
 The python script codes present in this directory has been written by Alejandro Carvantes-Barrera, and Mauricio Rosales-Rivera.
 
 # Introduction
