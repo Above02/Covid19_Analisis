@@ -6,7 +6,7 @@ import numpy as np
 import os
 
 # Cargar el modelo entrenado con las 5 características más importantes
-file_path = os.path.join(os.path.dirname(__file__), '..',  "random_forest_model_selected.pkl")
+file_path = os.path.join(os.path.dirname(__file__), "rf_model.pkl")
 rf_model_selected = joblib.load(file_path)
 
 # Definir la aplicación Streamlit
