@@ -1,11 +1,13 @@
 # Importar Streamlit y otros módulos necesarios
 import streamlit as st
 import pandas as pd
-#import joblib
+import joblib
 import numpy as np
+import os
 
 # Cargar el modelo entrenado con las 5 características más importantes
-#rf_model_selected = joblib.load('random_forest_model_selected.pkl')
+file_path = os.path.join(os.path.dirname(__file__), '..',  "random_forest_model_selected.pkl")
+rf_model_selected = joblib.load(file_path)
 
 # Definir la aplicación Streamlit
 def main():
