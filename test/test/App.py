@@ -2,14 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
-import requests
-
-# Función para descargar el archivo desde GitHub
-def download_model():
-    url = "https://github.com/Above02/Covid19_Analysis/raw/main/test/test/rf_model.pkl"
-    response = requests.get(url)
-    with open("rf_model.pkl", "wb") as f:
-        f.write(response.content)
 
 # Verificar si el modelo ya está descargado
 try:
@@ -17,9 +9,6 @@ try:
         rf_model = pickle.load(f)
 except FileNotFoundError:
     # Si el archivo no está presente, descargarlo
-    st.info("Descargando el modelo...")
-    download_model()
-    st.info("Modelo descargado. Puede continuar.")
 
 # Implementar la aplicación Streamlit
 st.title('Predicción de IMC')
