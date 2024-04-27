@@ -1,11 +1,11 @@
-#!pip install joblib
 import streamlit as st
 import pandas as pd
 import numpy as np
-import joblib
+import pickle
 
 # Cargar el modelo entrenado
-rf_model = joblib.load('rf_model.pkl')
+with open('rf_model.pkl', 'rb') as f:
+    rf_model = pickle.load(f)
 
 # Implementar la aplicación Streamlit
 st.title('Predicción de IMC')
